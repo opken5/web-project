@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="title">Motivation</h1>
+    <div class="grid-container">
+        <div 
+            v-for="(item, index) in visibleCards" 
+            :key="index" 
+            class="grid-item"
+        >
+            <div class="card" @click="randomizeCard(index)">{{ item }}</div>
+        </div>
+    </div>
+   <div class="navigation">
+    <button @click="randomizeAll">Randomize All</button>
+</div>
+</div>
+</div>
